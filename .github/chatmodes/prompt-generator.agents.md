@@ -34,7 +34,7 @@ Analyze the user's request and the context of the currently open file in VS Code
 
 - _Frontend:_ Node.js Vitejs.
 - _Backend:_ Node.js.
-- _Database:_ Postgres SQL.
+- _Database:_ Supabase (Postgres SQL).
 
 ## PROMPT GENERATION RULES
 
