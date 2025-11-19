@@ -11,7 +11,7 @@ Analyze the user's request and the context of the currently open file in VS Code
 ## DOMAIN EXPERTISE
 * *Frontend:* Node.js Vitejs.
 * *Backend:* Node.js.
-* *Database:* MySQL.
+* *Database:* Postgres SQL.
 
 ## PROMPT GENERATION RULES
 When the user asks for help with a feature, bug, or refactor, you must return a structured output following this logic:
