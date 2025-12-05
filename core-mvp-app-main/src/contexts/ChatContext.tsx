@@ -13,7 +13,7 @@ interface ChatContextType {
   currentChannel: Channel | null;
   channels: Channel[];
   messages: Message[];
-  // users: User[]; // Removed as we don't fetch all users yet
+  users: User[]; // Mocked for now to prevent TS errors
   login: (email: string, password: string) => Promise<boolean>;
   logout: () => void;
   setCurrentChannel: (channel: Channel) => void;
@@ -161,7 +161,7 @@ export const ChatProvider = ({ children }: { children: ReactNode }) => {
       currentChannel,
       channels,
       messages,
-      // users: [], // Removed
+      users: [], // Mocked empty list
       login,
       logout,
       setCurrentChannel: handleSetCurrentChannel,
