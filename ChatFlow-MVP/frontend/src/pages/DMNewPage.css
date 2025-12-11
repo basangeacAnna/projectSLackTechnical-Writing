@@ -1,0 +1,141 @@
+.dm-new-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--background);
+}
+
+/* HEADER */
+.dm-new-header {
+  padding: 1rem;
+  border-bottom: 1px solid hsl(var(--border));
+  flex-shrink: 0;
+}
+
+.dm-new-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+/* SEARCH CONTAINER */
+.dm-new-search-container {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(var(--border));
+  flex-shrink: 0;
+}
+
+.dm-new-search-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-size: 0.875rem;
+  transition: border-color 0.2s;
+}
+
+.dm-new-search-input:focus {
+  outline: none;
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 2px hsl(var(--ring));
+}
+
+.dm-new-search-input::placeholder {
+  color: hsl(var(--muted-foreground));
+}
+
+/* SCROLL AREA */
+.dm-new-scroll {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* SECTION LABEL */
+.dm-new-section {
+  padding: 1rem 0.75rem;
+}
+
+.dm-new-section-label {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+  letter-spacing: 0.05em;
+}
+
+/* USERS LIST */
+.dm-new-users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* USER ITEM */
+.dm-new-user-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dm-new-user-item:hover {
+  background-color: hsl(var(--accent));
+}
+
+.dm-new-user-item.online {
+  opacity: 1;
+}
+
+.dm-new-user-item.offline {
+  opacity: 0.65;
+}
+
+.dm-new-user-item.offline:hover {
+  opacity: 0.85;
+}
+
+/* USER AVATAR */
+.dm-new-avatar {
+  flex-shrink: 0;
+}
+
+/* USERNAME */
+.dm-new-username {
+  flex: 1;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(var(--foreground));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* DIVIDER */
+.dm-new-divider {
+  margin: 0.5rem 1rem;
+  height: 1px;
+  background-color: hsl(var(--border));
+}
+
+/* EMPTY STATE */
+.dm-new-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dm-new-empty p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
